@@ -1,42 +1,116 @@
 <!DOCTYPE html>
-<head>
-    <!-- The title for SEO & browser tabs -->
-<title>Cheffe Cecile </title>
-    <!--- Google Fonts Catamaran 200, 400, 500, 800-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
-    <!---- Gridlex------>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    
-    <!------ Custom Style sheets -->
-    <link href="/style.css" rel="stylesheet">
-    
-</head>
+    <head>
+        <!-- The title for SEO & browser tabs -->
+    <title>Cheffe Cecile </title>
+        <!--- Google Fonts Catamaran 200, 400, 500, 800-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
 
-<body>
-    <header>
-        <section class="grid">
-            <nav>
-                <a href="#"> Home </a>
-                <a href="#">About</a>
-            </nav>
-            <div>
-                <a href="/index.html">
-                    <h2 class="logo">LOGO</h2>
-                </a>
-            </div>
-            <nav>
-                <a href="#"> Prices </a>
-                <a href="#"> Contact </a>
-            </nav>
-        </section>
-        <section class=" padded banner bg-image grid">
-            <div>
-                <h2> A chef at your home</h2>
-            </div>
-        </section>
-    </header>
+        <!--------- CDN fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!---- Gridlex------>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+        
+        <!------ Custom Style sheets -->
+        <link href="/style.css" rel="stylesheet">
 
-</body>
+    </head>
+
+    <body>
+
+        <header class="grid-spaceAround">
+                <nav class="col-3-middle right">
+                    <a href="#"> Home </a>
+                    <a href="#">About</a>
+                </nav>
+                <div class="col-3-middle centered">
+                    <a href="/index.html">
+                        <h2 class="logo">LOGO</h2>
+                    </a>
+                </div>
+                <nav class="col-3-middle ">
+                    <a href="#"> Prices </a>
+                    <a href="#"> Contact </a>
+                </nav>
+            </header>
+  <!---------- Banner -------->       
+
+        <section class="tall-100 padded bg-image grid">
+                <div class="col-12-middle center">
+                    <h2> A chef at your home</h2>
+                </div>
+        </section>
+        
+
+<!------- Featured Section-------->
+        <section class="padded">
+            <div class="grid padded flex-flip">
+                <div class="col-5_sm-12 bg-image bg-picnic"></div>
+                <div class="col-7_sm-12-middle padded">
+                    <h2>Outdoor events</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ducimus earum beatae. Rerum nemo eveniet molestias voluptatum suscipit, cupiditate assumenda aliquam quaerat debitis aliquid labore fuga sapiente quibusdam repudiandae distinctio!</p>
+                </div>
+            </div>
+            <div class="grid padded flex-flip">
+                <div class=" col-5_sm-12 bg-image bg-cheffe">        
+                </div>
+                <div class="col-7_sm-12-middle padded">
+                    <h2>Home events</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at laborum nihil voluptatem ullam fugiat neque quis, commodi hic amet molestias officia quidem explicabo, fuga inventore! Tempore incidunt vero rerum.</p>
+                </div>
+            </div>
+            
+        </section>
+
+<!------- Our services section ---->
+        <section class="padded grid bg-dark light-text tall-70">
+            <div class="col-12 padded center">
+                <h2>Our Services</h2>
+             </div>
+            <div class="col-4_sm-12 padded">
+                <i class="fa-thin fa-wine-glass"></i>
+                <h3>Best Products</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus nobis hic iusto molestiae excepturi officiis esse, reiciendis delectus sit porro vero exercitationem commodi. Totam nihil at deleniti obcaecati iure!</p>
+            </div>
+            <div class="col-4_sm-12 padded">
+                <i class="fa-thin fa-wine-glass"></i>
+                <h3>Designed Menu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus consequatur recusandae deserunt, facere possimus corrupti molestias sit voluptatum labore nobis tempore, nulla beatae eligendi error. Dicta laboriosam officiis accusamus.</p>
+            </div>
+            <div class="col-4_sm-12 padded">
+                <i class="fa-thin fa-wine-glass"></i>
+                <h3>Wine Matching</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam aliquid sit excepturi repellat doloribus sequi quasi temporibus doloremque voluptas, praesentium fugiat laborum similique asperiores laboriosam eos, nesciunt, accusantium porro error.</p>
+            </div>
+            <div class="col-12 padded center">
+                <button href="#"> More</button>
+            </div>
+        </section>
+
+        <footer class="grid padded">
+            <div class="col-6_sm-12 padded">
+                <h3> Get in Touch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, perferendis ipsa non voluptatibus unde, tenetur doloribus quod aspernatur deserunt repudiandae atque nostrum doloremque veritatis sapiente, rerum quis aut quaerat? Omnis?</p>
+                <p><strong> E-Mail:</strong> cecile@athome.com</p>
+                <p><strong> Phone:</strong> 31905687</p>
+            </div>
+            <div class="col-6_sm-12-middle padded">
+                <form class="grid-center" action="#" method="POST">
+                    <div class="col-6_sm-12">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="col-6_sm-12">
+                        <input type="email" name="_replyto" placeholder="Your Email">
+                    </div>
+                    <div class="col-12">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send" class="button">
+                    </div>
+                </form>
+            </div>
+        </footer>
+
+        
+    </body>
 </html>
