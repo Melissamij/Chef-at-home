@@ -1,0 +1,29 @@
+/*
+colors: 
+purple : #4C1E4F 
+pink: #F7D1CD
+font: font-family: 'Catamaran', sans-serif;
+
+*/
+
+/*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* temporary styles  */
+*{
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+}
+html, 
+body{
+    border: none;
+}
+/* End temp style */
