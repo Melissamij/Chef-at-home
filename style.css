@@ -128,7 +128,8 @@ h2{
     line-height: 1.1;
     margin-bottom: 1rem;
 }
-h3 {line-height: 1;}
+h3 {line-height: 1;
+font-size:1rem;}
 
 p {font-weight:200;
 line-height: 1.5;
@@ -173,25 +174,6 @@ line-height: 1;}
 .text-right{text-align: right;}
 
 
-/*  style image*/
-[class*=grid] {margin:0;}
-img { max-width: 100%; }
-
-.bg-image{
-    background-image: url("/images/cecile-website-fromage.jpg");
-    background-size: cover;
-    min-height: 10rem;
-}
-.landscape{ padding-bottom: 65%;}
-.portrait {padding-bottom: 125%;}
-.portrait-tall { padding-bottom: 175%; }
-.square {padding-bottom: 100%;}
-
-/* Background Position */
-.bg-pos-t { background-position: top; }
-.bg-pos-b { background-position: bottom; }
-.bg-pos-l { background-position: left; }
-.bg-pos-r { background-position: right; }
 
 
 
@@ -265,11 +247,26 @@ header a {
 
 /* banner*/ 
   .banner {
-    background-image: url('/images/cecile-website7-pancake.jpg');
+    background-image: url('/images/pancake.jpg');
     background-size: cover;
     background-position: center;
     min-height: 80vh;
   }
+  /*  style image*/
+[class*=grid] {margin:0;}
+img { max-width: 100%; }
+
+.landscape{ padding-bottom: 65%;}
+.portrait {padding-bottom: 125%;}
+.portrait-tall { padding-bottom: 175%; }
+.square {padding-bottom: 100%;}
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
   
   /*Background Images */
   .bg-image {
