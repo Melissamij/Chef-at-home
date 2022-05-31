@@ -216,11 +216,15 @@ header a {
 
   /* Mobile Menu Styles */
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  display: none; 
+  	background-color: #4C1E4F; 
+  	padding: 5%;
+  	position: fixed; 
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	text-align: center;
 }
 
 .mobile-menu a {
@@ -230,8 +234,15 @@ header a {
 }
 
 .hamburger-button {
-  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  right: 1rem;
+  top: 2.5rem;
   z-index: 2;
+}
+.hamburger-button.active {
+  color: white;
 }
 
 .hamburger-button i {
@@ -240,9 +251,9 @@ header a {
 }
 
 /* General CSS Responsive Styles */
-.mobile-menu {
-  display: none;
-  z-index: 1;
+/* Default Responsive Styles (Dekstop and below) */
+.mob-show {
+  display: none; 
 }
 
 /* banner*/ 
@@ -371,6 +382,8 @@ form .button {
 @media (max-width: 48em) {
   html {font-size: 14px;}
     p{font-size: 1.1rem;}
+    .mob-hide { display: none; }
+  	.mob-show { display: block; }
   .show-sm { display: block; }
   .hide-sm { display: none;  }
 	 
