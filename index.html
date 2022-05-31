@@ -2,16 +2,26 @@
     <head>
         <!-- The title for SEO & browser tabs -->
     <title>Cheffe Cecile </title>
-        <!--- Google Fonts Catamaran 200, 400, 500, 800-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
+         <!------ Fontawesome icons ------>
 
-        <!--------- CDN fontawesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!---- Gridlex------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!------ Meta viewport -------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!----------- Google font Catamaran 200 400 500 800-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
+    
+        <!---- CSS animate -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    
+        <!---- Gridlex & Flexbox grid---->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-        
+    
+        <!-------- Gallery style pop up -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
         <!------ Custom Style sheets -->
         <link href="/style.css" rel="stylesheet">
 
@@ -19,7 +29,54 @@
 
     <body>
 
-        <header class="grid-spaceAround">
+        <!----------- Header ---------->
+        <header class="grid text-center tall-100 md-tall-80">
+            <div class="header-nav grid col-12-top">
+
+                <div class="header-nav col-12-top grid">
+                    <div class="col-5_sm-11-middle sm-padded-b-0">
+                        <a href="/index.html" class="logo">
+                            <h2>A chef at your home</h2>
+                        </a>
+                    </div>
+                    <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
+                        <a href="/index.html">Home</a>
+                        <a href="/about.html">About</a>
+                        <a href="/products.html">Products</a>
+                        <a href="/gallery.html">Gallery</a>
+                        <a href="/contact.html">Contact</a>
+                    </nav>
+                    
+                    <div class="col-1 show-sm">
+                        <div class="hamburger-button">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                 </div>
+                 <nav class="mobile-menu bg-featured padded">
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/products.html">Products</a>
+                    <a href="/gallery.html">Gallery</a>
+                    <a href="/contact.html">Contact</a>
+                 </nav>
+
+            <div class="col-12-middle">
+                <h3 class="editable"data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <span class="featured-text">sleep</span> like a baby</h3>
+                <h1 class="font-weight-normaleditable">the ultimate matress solution</h1>
+            </div>
+        </div>
+        </header>
+
+
+
+
+
+
+
+
+        <!--- <header class="grid-spaceAround">
                 <nav class="col-3-middle right">
                     <a href="#"> Home </a>
                     <a href="#">About</a>
@@ -33,14 +90,13 @@
                     <a href="#"> Prices </a>
                     <a href="#"> Contact </a>
                 </nav>
-            </header>
-  <!---------- Banner -------->       
+            </header>      
 
         <section class="tall-100 padded bg-image grid">
                 <div class="col-12-middle center">
                     <h2> A chef at your home</h2>
                 </div>
-        </section>
+        </section> ---->
         
 
 <!------- Featured Section-------->
