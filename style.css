@@ -31,10 +31,6 @@ body{
 }
 
 /* Utility classes  vh */
-body{ 
-    font-family: 'Catamaran', sans-serif;
-    color: grey;}
-
 
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
@@ -144,6 +140,10 @@ line-height: 1;}
 
 
 /* ------ Typography Styles-----*/
+body{ 
+  font-family: 'Catamaran', sans-serif;
+  color: rgb(120,120,125);}
+
 h1{
   color: #4C1E4F;
   font-size: 6rem;
@@ -177,6 +177,14 @@ a:hover{
 
 
 /* header */
+header{
+  background-image: url('/images/pancake.jpg');
+  background-size: cover;
+  background-position: center;
+padding: 1% 5%;/* top & bottom, left & right*/
+/* header 3 pour tout centrer*/
+background-position: 45% 65%;
+}
 
 header a {
     color: inherit;
@@ -187,13 +195,7 @@ header a {
   header a:hover{
     color: #F7D1CD;
   }
-  header{
-      background-image: url('/images/pancake.jpg');
-      background-size: cover;
-      background-position: center;
-    padding: 1% 5%;/* top & bottom, left & right*/
-    /* header 3 pour tout centrer*/
-  }
+  
   .logo {
     font-size: 4rem;
     font-weight: normal;
@@ -260,8 +262,21 @@ width: 50%;
 .button:hover{
   cursor: pointer;
   background-color: #4C1E4F;
-  color: inherit;
+  color: #F7D1CD;
 }
+
+
+/*--------- Icon Grid---------*/
+.fas,
+.fab,
+.fa-thin { 
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #4C1E4F;
+}
+
 /* General CSS Responsive Styles */
 /* Default Responsive Styles (Dekstop and below) */
 .mob-show {
@@ -305,16 +320,6 @@ img { max-width: 100%; }
   .bg-crepes { background-image: url('/images/crepes.jpg');}
   .bg-salade {background-image: url('/images/saladmaking.jpg');}
   .bg-kitchen { background-image: url('/images/kitchen.jpg');}
-
-/*--------- Icon Grid---------*/
-.fas,
-.fab,
-.fa-thin { 
-    display: block;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
 
 
 
@@ -368,8 +373,8 @@ form .button {
   cursor: pointer;
 }
 form .button:hover {
-  background-color: #4C1E4F;
-  color: inherit;
+  background-color: #F7D1CD;
+  color: #4C1E4F;
 }
   @media(max-width:768px) {
    .email-signup input {
