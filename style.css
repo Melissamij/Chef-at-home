@@ -257,7 +257,7 @@ header a {
 border: 1px solid #4C1E4F;
 display: inline-block;
 padding: 0.5rem 1rem;
-width: 50%;
+width: 25%;
 }
 .button:hover{
   cursor: pointer;
