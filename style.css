@@ -104,8 +104,6 @@ body{
 /*.bg-featured { background-color: #4C1E4F; }*/
 .bg-dark     { background-color: #4C1E4F; }
 
-
-
 .capped-width{
     max-width:1000px;
     margin: auto;
@@ -121,30 +119,6 @@ body{
 .center { text-align: center; }
 .right  { text-align: right; }
 
-/* ------ Typography Styles-----*/
-
-h2{
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-}
-h3 {line-height: 1;
-font-size:1rem;}
-
-p {font-weight:200;
-line-height: 1.5;
-margin-bottom: 1rem;}
-
-p:last-child {margin-bottom: 0%;}
-
-a {
-color:inherit;
-text-decoration: none;
-}
-
-a:hover{
-    color: #F7D1CD;
-}
 
 .featured-text{ color: #F7D1CD;}
 .featured-text-white{ color:white;}
@@ -169,12 +143,37 @@ line-height: 1;}
 
 
 
-.text-left{text-align: left;}
-.text-center{text-align: center;}
-.text-right{text-align: right;}
+/* ------ Typography Styles-----*/
+h1{
+  color: #4C1E4F;
+  font-size: 6rem;
+  display: inline-block;
+}
 
+h2{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color:#4C1E4F;
+}
+h3 {line-height: 1;
+font-size:1rem;
+color:#4C1E4F;}
 
+p {font-weight:200;
+line-height: 1.5;
+margin-bottom: 1rem;}
 
+p:last-child {margin-bottom: 0%;}
+
+a {
+color:inherit;
+text-decoration: none;
+}
+
+a:hover{
+    color: #F7D1CD;
+}
 
 
 /* header */
@@ -235,6 +234,7 @@ header a {
 
 .hamburger-button {
   cursor: pointer;
+  color: #4C1E4F;
   display: inline-block;
   position: fixed;
   right: 1rem;
@@ -250,6 +250,18 @@ header a {
   margin-bottom: 0;
 }
 
+/*------ featured section ------*/
+.button {
+border: 1px solid #4C1E4F;
+display: inline-block;
+padding: 0.5rem 1rem;
+width: 50%;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: #4C1E4F;
+  color: inherit;
+}
 /* General CSS Responsive Styles */
 /* Default Responsive Styles (Dekstop and below) */
 .mob-show {
@@ -293,9 +305,11 @@ img { max-width: 100%; }
   .bg-crepes { background-image: url('/images/crepes.jpg');}
   .bg-salade {background-image: url('/images/saladmaking.jpg');}
   .bg-kitchen { background-image: url('/images/kitchen.jpg');}
+
 /*--------- Icon Grid---------*/
 .fas,
-.fab{ 
+.fab,
+.fa-thin { 
     display: block;
     text-align: center;
     margin-bottom: 2rem;
@@ -350,6 +364,12 @@ form [class*=col-] {
 }
 form .button {
   width:100%;
+  background-color: white;
+  cursor: pointer;
+}
+form .button:hover {
+  background-color: #4C1E4F;
+  color: inherit;
 }
   @media(max-width:768px) {
    .email-signup input {
@@ -364,16 +384,14 @@ form .button {
 .show-xs, 
 .show-sm,
 .show-md,
-.mobile-menu {
-  display: none;
-}
+.mobile-menu {display: none;}
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 64em) {
   .show-md { display: block; }
-  .hide-md { display: none;  }
+  .hide-md { display: none; }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -419,4 +437,4 @@ form .button {
     line-height: 1.1;
     font-size: 1.4rem;
 }
-
+}
