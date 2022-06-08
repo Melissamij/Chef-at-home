@@ -23,12 +23,7 @@ body{
 }
  End temp style */
 
-/* -------------- Style Image------*/
-.bg-image{
-    background-image: url('/images/cecile-website7.jpg');
-    background-size: cover;
 
-}
 
 /* Utility classes  vh */
 
@@ -128,7 +123,8 @@ body{
 .subtitle{font-size: 1rem;
 color: rgb(120,120,125);}
 
-.quote-icon{font-size: 6rem;
+.quote-icon{
+font-size: 6rem;
 display: inline-block;
 color: #F7D1CD;
 line-height: 1;}
@@ -266,6 +262,7 @@ width: 25%;
 }
 
 
+
 /*--------- Icon Grid---------*/
 .fas,
 .fab,
@@ -315,13 +312,18 @@ img { max-width: 100%; }
   }
   
   .bg-picnic {background-image:url('/images/picnic.jpg');}
-  .bg-cheffe {background-image:url('/images/chefcooking.jpg');}
+  .bg-cheffe {
+    background-image:url('/images/chefcooking.jpg');
+    background-position: center;
+    background-size: cover;}
   .bg-pancake { background-image: url('/images/pancake.jpg');}
   .bg-crepes { background-image: url('/images/crepes.jpg');}
   .bg-salade {background-image: url('/images/saladmaking.jpg');}
   .bg-kitchen { background-image: url('/images/kitchen.jpg');}
 
-
+  .shape-window {
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;}
 
 
 /* footer form */
