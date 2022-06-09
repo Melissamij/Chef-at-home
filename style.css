@@ -224,7 +224,6 @@ header a {
 
   /* Mobile Menu Styles */
 .mobile-menu {
-  display: none; 
   	color: #4C1E4F; 
   	padding: 5%;
   	position: fixed; 
@@ -233,6 +232,7 @@ header a {
   	left: 0;
   	right: 0;
   	text-align: center;
+    background-color: #F7D1CD;
 }
 
 .mobile-menu a {
@@ -240,18 +240,19 @@ header a {
   font-size: 1.2rem;
   padding: 0.5rem;
 }
+.mobile-menu a:hover{ color: white;}
 
 .hamburger-button {
   cursor: pointer;
   color: #4C1E4F;
-  display: inline-block;
-  position: fixed;
+  /*display: inline-block;*/
+  position: relative;
   right: 1rem;
-  top: 2.5rem;
+  top: 1.5rem;
   z-index: 2;
 }
 .hamburger-button.active {
-  color: white;
+  color: inherit;
 }
 
 .hamburger-button i {
