@@ -113,6 +113,7 @@ body{
 
 .featured-text{ color: #F7D1CD;}
 .featured-text-white{ color:white;}
+.subtle { font-weight: 100;}
 
 .small-text{font-size: 1rem;}
 .medium-text{
@@ -332,7 +333,7 @@ img { max-width: 100%; }
 /* footer form */
 input, textarea {
   border-style: solid;
-  border: 2px solid rgb(200, 200, 205);
+  border: 2px solid #4C1E4F;
   padding: 0.8em;
   display: block;
   width: 100%;
@@ -376,6 +377,8 @@ form .button {
   width:100%;
   background-color: white;
   cursor: pointer;
+  border:2px solid #4C1E4F;
+  margin-top: 1rem;
 }
 form .button:hover {
   background-color: #F7D1CD;
