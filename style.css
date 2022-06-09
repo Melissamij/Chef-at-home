@@ -133,6 +133,16 @@ line-height: 1;}
 .font-weight-normal{font-weight: 400;}
 .font-weight-bold{font-weight: 800;}
 
+.column-reverse { 
+  display: flex; 
+  flex-direction: column-reverse; }
+
+/* banner 
+.banner {
+  background-image: url('/images/pancake.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh; }*/
 
 
 /* ------ Typography Styles-----*/
@@ -144,6 +154,7 @@ h1{
   color: #4C1E4F;
   font-size: 6rem;
   display: inline-block;
+  padding-top: 10rem;
 }
 
 h2{
@@ -178,7 +189,6 @@ header{
   background-size: cover;
   background-position: center;
 padding: 1% 5%;/* top & bottom, left & right*/
-/* header 3 pour tout centrer*/
 background-position: 45% 65%;
 }
 
@@ -280,13 +290,6 @@ width: 25%;
   display: none; 
 }
 
-/* banner*/ 
-  .banner {
-    background-image: url('/images/pancake.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
-  }
   /*  style image*/
 [class*=grid] {margin:0;}
 img { max-width: 100%; }
@@ -399,6 +402,7 @@ form .button:hover {
 @media (max-width: 64em) {
   .show-md { display: block; }
   .hide-md { display: none; }
+  
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -430,9 +434,13 @@ form .button:hover {
   .sm-margin-l-0 { margin-left: 0; }
   .sm-margin-r-0 { margin-right: 0; }
   .logo h2 {font-size: 2rem;}
+  .column-reverse { 
+    display: flex; 
+    flex-direction: column-reverse; }
   h3 {font-size: 10vw;}
   footer{ text-align: center;}
-}
+.header-nav { min-height: 50vh;}
+  }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
@@ -442,6 +450,6 @@ form .button:hover {
   .hide-xs { display: none;  }
   h1 {
     line-height: 1.1;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 }
