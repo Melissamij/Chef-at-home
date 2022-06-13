@@ -455,9 +455,9 @@ form .button:hover {
 
 @media (max-width: 48em) {
   html {font-size: 14px;}
-    p{font-size: 1.1rem;}
-    .mob-hide { display: none; }
-  	.mob-show { display: block; }
+  p{font-size: 1.1rem;}
+  .mob-hide { display: none; }
+  .mob-show { display: block; }
   .show-sm { display: block; }
   .hide-sm { display: none;  }
 	 
@@ -480,11 +480,10 @@ form .button:hover {
   .sm-margin-r-0 { margin-right: 0; }
   .logo h2 {font-size: 2rem;}
   .column-reverse { 
-    display: flex; 
     flex-direction: column-reverse; }
   h3 {font-size: 10vw;}
   footer{ text-align: center;}
-.header-nav { min-height: 50vh;}
+  .header-nav { min-height: 50vh;}
   }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
