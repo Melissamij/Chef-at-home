@@ -121,22 +121,20 @@ body{
  line-height: 1.1;}
 .big-text{font-size: 4.5rem;}
 
-.subtitle{font-size: 1rem;
-color: rgb(120,120,125);}
+.subtitle{
+  font-size: 1rem;
+  color: rgb(120,120,125);}
 
 .quote-icon{
-font-size: 6rem;
-display: inline-block;
-color: #F7D1CD;
-line-height: 1;}
+  font-size: 6rem;
+  display: inline-block;
+  color: #F7D1CD;
+  line-height: 1;}
 
 .font-weight-light{ font-weight:200;}
 .font-weight-normal{font-weight: 400;}
 .font-weight-bold{font-weight: 800;}
 
-.column-reverse { 
-  display: flex; 
-  flex-direction: column-reverse; }
 
 /* banner 
 .banner {
@@ -165,12 +163,12 @@ h2{
     color:#4C1E4F;
 }
 h3 {line-height: 1;
-font-size:1rem;
-color:#4C1E4F;}
+  font-size:1rem;
+  color:#4C1E4F;}
 
 p {font-weight:200;
-line-height: 1.5;
-margin-bottom: 1rem;}
+  line-height: 1.5;
+  margin-bottom: 1rem;}
 
 p:last-child {margin-bottom: 0%;}
 
@@ -189,8 +187,8 @@ header{
   background-image: url('/images/pancake.jpg');
   background-size: cover;
   background-position: center;
-padding: 1% 5%;/* top & bottom, left & right*/
-background-position: 45% 65%;
+  padding: 1% 5%;/* top & bottom, left & right*/
+  background-position: 45% 65%;
 }
 
 header a {
@@ -455,7 +453,7 @@ form .button:hover {
 
 @media (max-width: 48em) {
   html {font-size: 14px;}
-  p{font-size: 1.1rem;}
+  p {font-size: 1.1rem;}
   .button{display: inline;}
   .mob-hide { display: none; }
   .mob-show { display: block; }
