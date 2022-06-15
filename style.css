@@ -12,19 +12,10 @@ font: font-family: 'Catamaran', sans-serif;
     box-sizing: border-box;
 } 
 
-/* temporary styles  
-*{
-    padding: 0.5rem;
-    border: 2px solid rgb(200,200,200);
-}
-html, 
-body{
-    border: none;
-}
- End temp style */
+ [class*=grid] {margin:0;}
+ img { max-width: 100%; }
 
-
-
+ html { scroll-behavior: smooth;}
 /* Utility classes  vh */
 
 .tall-50 { min-height: 50vh; }
@@ -92,7 +83,7 @@ body{
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
 /*  utility classes background */ 
-/*.bg-featured { background-color: #4C1E4F; }*/
+
 .bg-dark     { background-color: #4C1E4F; }
 
 .capped-width{
@@ -136,18 +127,11 @@ body{
 .font-weight-bold{font-weight: 800;}
 
 
-/* banner 
-.banner {
-  background-image: url('/images/pancake.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 80vh; }*/
-
 
 /* ------ Typography Styles-----*/
 body{ 
   font-family: 'Catamaran', sans-serif;
-  color: rgb(120,120,125);}
+  color: rgb(60,60,60);}
 
 h1{
   color: #4C1E4F;
@@ -301,8 +285,7 @@ width: 25%;
 }
 
 .card:hover {
-  box-shadow: 0 20px 25px -5px #F7D1CD, 0 10px 10px -5px;
-  
+  box-shadow: white 0px 8px 24px;
 }
 .card h3 {
   font-size: 1.1rem;
@@ -330,10 +313,6 @@ width: 25%;
 .mob-show {
   display: none; 
 }
-
-  /*  style image*/
-[class*=grid] {margin:0;}
-img { max-width: 100%; }
 
 .landscape{ padding-bottom: 65%;}
 .portrait {padding-bottom: 125%;}
@@ -453,7 +432,10 @@ form .button:hover {
 
 @media (max-width: 48em) {
   html {font-size: 14px;}
+  h1 { font-size: 10vh;}
   p {font-size: 1.1rem;}
+  h3 {font-size: 10vw;}
+  footer{ text-align: center;}
   .button{display: inline;}
   .mob-hide { display: none; }
   .mob-show { display: block; }
@@ -479,11 +461,11 @@ form .button:hover {
   .sm-margin-r-0 { margin-right: 0; }
   .logo h2 {font-size: 2rem;}
   .column-reverse { flex-direction: column-reverse; }
-  h3 {font-size: 10vw;}
-  footer{ text-align: center;}
+ 
   .header-nav { min-height: 50vh;}
-  .mobile-menu a{ font-size: 20px;
-  font-weight: 800;}
+  .mobile-menu a{ 
+    font-size: 20px;
+    font-weight: 800;}
   }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -492,21 +474,16 @@ form .button:hover {
 @media (max-width: 36em) {
   .show-xs { display: block; }
   .hide-xs { display: none;  }
-  h1 {
-    line-height: 1.1;
-    font-size: 2rem;
-    }
-    .horizontal-scroll {
+  h1 {line-height: 1.1; }
+  .horizontal-scroll {
       overflow-x: auto;
       flex-wrap: nowrap;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-bottom: 7%;
     }
-    .card img {
-      margin-top: -25%;
-    }
-    .mob-padded-0 {
+  .card img {margin-top: -25%;}
+  .mob-padded-0 {
       padding-left: 0;
       padding-right: 0;
     }
