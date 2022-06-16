@@ -1,5 +1,27 @@
 ---
 layout: default
+cards:
+- heading: Menu 1
+  prices: 30€
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias numquam neque aut provident tenetur. Modi unde expedita labore odio nemo. Nostrum, ipsa culpa animi dolores temporibus expedita est qui consequatur.
+  include: include 1
+  include: include 2
+  include: include 3
+  include: include 4
+- heading: Menu 1
+  prices: 30€
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias numquam neque aut provident tenetur. Modi unde expedita labore odio nemo. Nostrum, ipsa culpa animi dolores temporibus expedita est qui consequatur.
+  include: include 1
+  include: include 2
+  include: include 3
+  include: include 4
+- heading: Menu 1
+  prices: 30€
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias numquam neque aut provident tenetur. Modi unde expedita labore odio nemo. Nostrum, ipsa culpa animi dolores temporibus expedita est qui consequatur.
+  include: include 1
+  include: include 2
+  include: include 3
+  include: include 4
 ---
 
  <!----------- Header ---------->
@@ -31,22 +53,24 @@ layout: default
  <section class="padded center pricing">
     <div class="grid horizontal-scroll">
     <!----- First Card--->
+    {% for item in page.cards %}
         <div class="col-4_xs-11 padded-05">
             <div class="card">
-                <h3>Menu 1</h3>
-                <h4 class="prices"> 40€</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>{{item.heading}}</h3>
+                <h4 class="prices"> {{item.prices}}</h4>
+                <p>{{item.description}}</p>
                 <ul>
-                    <li>include one</li>
-                    <li>include two</li>
-                    <li>include three</li>
-                    <li>include four</li>
+                    <li>{{item.include}}</li>
+                    <li>{{item.include}}</li>
+                    <li>{{item.include}}</li>
+                    <li>{{item.include}}</li>
                 </ul>
             </div>
         </div>
 
+<!---
 
-    <!------- Second Card-->
+  
     <div class="col-4_xs-11 padded-05">
         <div class="card">
             <h3>Menu 2</h3>
@@ -60,7 +84,7 @@ layout: default
             </ul>
         </div>
     </div>
-    <!---- Third Card---->
+   
     <div class="col-4_xs-11 padded-05">
         <div class="card">
             <h3>Menu 3</h3>
@@ -74,8 +98,9 @@ layout: default
             </ul>
         </div>
     </div>
-  </div>
-</section>
+  </div>----->
+  {% enfor %}
+</section> 
 
 
 <div class="col-12 padded center">

@@ -93,6 +93,7 @@ font: font-family: 'Catamaran', sans-serif;
   height: 100%;
   display: flex;
   position: absolute;
+ 
 
 }
 .capped-width{
@@ -145,7 +146,7 @@ body{
 h1{
   color: #4C1E4F;
   font-size: 6rem;
- 
+
 }
 
 h2{
@@ -226,6 +227,7 @@ header a {
   	right: 0;
   	text-align: center;
     background-color: #F7D1CD;
+    z-index: 1;
 }
 
 .mobile-menu a {
